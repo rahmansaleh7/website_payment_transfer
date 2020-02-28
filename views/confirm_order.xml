@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<template id="confirm_order_templatesss" name="Confirm Order template" inherit_id="sale.sale_order_portal_template">
+	    <xpath expr="//div[hasclass('o_download_pdf')]" position="after">
+            	<a t-attf-href="/payment/confirmation/{{sale_order.id}}" class="btn btn-primary btn-block">
+                <!-- <a t-att-href="order.get_portal_url()" class="btn btn-primary"> -->
+                    <i class="fa fa-cart-plus"/> Konfirmasi Pembayaran
+                </a>
+    		<!-- <a t-attf-href="orders.get_portal_url()" class="btn btn-primary btn-block">
+    	        <i class="fa fa-cart-plus"/> Konfirmasi Pembayaran
+    	    </a> -->
+
+	    </xpath>
+	</template>
+
+</odoo>
